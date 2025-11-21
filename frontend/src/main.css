@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fix navbar overlap when scrolling to a section */
+section {
+  scroll-margin-top: 80 px;
+}
+
+/* Soft Shadow */
+.shadow-soft-lg {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Rounded 3XL */
+.rounded-3xl-soft {
+  border-radius: 28px;
+}
+
+/* CARD STYLE — Now solid, no opacity */
+.card-soft {
+  @apply bg-white rounded-3xl-soft p-6 shadow-soft-lg border border-neutral-200;
+}
+
+/* Pastel lavender text utilities */
+.text-lavender-400 {
+  color: #C8A2C8;
+}
+
+.text-lavender-300 {
+  color: #E0B7E0;
+}
+
+.bg-lavender-100 {
+  background-color: #F3E6F8;
+}
+
+.bg-lavender-200 {
+  background-color: #EBD9F5;
+}
+
+/* Pastel peach colors */
+.text-peach-400 {
+  color: #FFBC8F;
+}
+
+.bg-peach-300 {
+  background-color: #FFCBA4;
+}
+
+.bg-peach-100 {
+  background-color: #FFE6D3;
+}
+
+/* Remove all opacity backgrounds globally */
+.bg-solid {
+  background-color: white;
+}
+
+/* Optional: full-page pastel background */
+.body-pastel {
+  background-color: #F9F5FF; /* subtle lavender white */
+}
+
+/* Buttons (optional global styles) */
+.btn-peach {
+  @apply px-6 py-3 rounded-full bg-peach-300 text-white font-medium shadow-soft-lg hover:shadow-md transition;
+}
+
+.btn-lavender {
+  @apply px-6 py-3 rounded-full border border-lavender-400 text-lavender-400 font-medium hover:bg-lavender-400 hover:text-white transition;
+}
+body {
+  background-color: #F3E6F8; /* soft pastel lavender */
+}
+
